@@ -1,51 +1,29 @@
 # Быстрая установка Tailwind CSS с Vite для вебинара
 
-## Команды для быстрого старта:
+## Быстрый старт:
 
 ```bash
-# 1. Создаем проект
-npm create vite@latest my-tailwind-app -- --template vanilla
+# 1. Либо просто скачиваем проект, либо клонируем этот репозиторий при помощи команды
+git clone https://github.com/kurator-al/tailwind-webinar.git
 
-# 2. Переходим в папку
-cd my-tailwind-app
+# 2. Устанавливаем node.js
+# его можно поставить как обычную программу, сейчас на сайте это зелёная кнопка "Windows Installer", но может в будущем измениться. Процедура установки многоступенчатая, но в основном просто жмём "далее"
 
-# 3. Устанавливаем зависимости
+https://nodejs.org/en/download
+
+# 3. Открываем папку с проектом (tailwind-webinar если не переименовали), открываем её в vs code и в терминале устанавливаем зависимости
 npm install
 
-# 4. Устанавливаем Tailwind CSS
-npm install -D tailwindcss @tailwindcss/postcss autoprefixer
-
-# 5. Создаем конфигурацию PostCSS
-echo "export default {
-  plugins: {
-    '@tailwindcss/postcss': {},
-    autoprefixer: {},
-  },
-}" > postcss.config.js
-```
-
-## Настройка CSS:
-
-В файле `src/style.css` заменить содержимое на:
-
-```css
-@import "tailwindcss";
-
-/* Дополнительные кастомные стили можно добавлять здесь */
-.custom-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
 ```
 
 ## Структура проекта для вебинара:
 
 ```
-my-tailwind-app/
+tailwind-webinar/
 ├── index.html          # Вся разметка здесь (как в обычной верстке)
 ├── src/
 │   ├── style.css       # Tailwind + кастомные стили
-│   ├── main.js         # Только JavaScript логика
-│   └── counter.js      # Модульный JS (опционально)
+│   └── main.js         # Только JavaScript логика
 ├── postcss.config.js   # Конфигурация для Tailwind
 └── package.json        # Зависимости
 ```
