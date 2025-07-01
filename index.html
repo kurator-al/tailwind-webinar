@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS Вебинар - Простая верстка</title>
+  <meta name="description" content="Изучаем Tailwind CSS с простой структурой проекта для начинающих">
+</head>
+
+<body class="bg-gray-50">
+  <!-- Хедер -->
+  <header class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-6">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-900">Tailwind CSS Вебинар</h1>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-500 hover:text-gray-900 transition duration-300">Главная</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 transition duration-300">О нас</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 transition duration-300">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <!-- Секция приветствия -->
+    <section class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+        Изучаем <span class="text-blue-600">Tailwind CSS</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Utility-first CSS фреймворк для быстрого создания современных интерфейсов
+      </p>
+    </section>
+
+    <!-- Карточки с примерами -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+        <div class="w-12 h-12 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
+          <span class="text-white font-bold text-xl">🎨</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Стилизация</h3>
+        <p class="text-gray-600">Быстрое применение стилей с помощью utility классов</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+        <div class="w-12 h-12 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
+          <span class="text-white font-bold text-xl">📱</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Адаптивность</h3>
+        <p class="text-gray-600">Встроенная поддержка responsive дизайна</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6">
+        <div class="w-12 h-12 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
+          <span class="text-white font-bold text-xl">⚡</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Скорость</h3>
+        <p class="text-gray-600">Ускоренная разработка без написания CSS</p>
+      </div>
+    </section>
+
+    <!-- Интерактивная секция -->
+    <section class="bg-white rounded-lg shadow-lg p-8 text-center">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Попробуйте сами!</h3>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <button id="counter"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105"></button>
+        <button id="change-color"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+          Изменить цвет хедера
+        </button>
+      </div>
+      <p class="text-gray-600 mt-4">Кликните на кнопки чтобы увидеть интерактивность</p>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="mt-16">
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Свяжитесь с нами</h2>
+
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+              Имя
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
+              id="name" type="text" placeholder="Ваше имя">
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+              Email
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
+              id="email" type="email" placeholder="your@email.com">
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+              Сообщение
+            </label>
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500 h-32 resize-none"
+              id="message" placeholder="Ваше сообщение"></textarea>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 w-full"
+              type="button">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="text-center">
+        <p class="text-gray-400">© 2024 Tailwind CSS Вебинар. Простая верстка с современными инструментами.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключение скриптов -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
