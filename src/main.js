@@ -1,5 +1,3 @@
-import "./style.css";
-
 // Добавляем функционал смены цвета хедера
 const changeColorBtn = document.querySelector("#change-color");
 
@@ -31,7 +29,6 @@ changeColorBtn.addEventListener("click", () => {
 
   changeColorBtn.classList.add(getRandomColor());
 });
-
 
 const swiper = new Swiper(".mySwiper", {
   // Основные параметры
