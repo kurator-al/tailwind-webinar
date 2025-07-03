@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* 
+Классы для динамического использования в JavaScript, просто добавляем в коммент и tailwind их скомпилирует:
+bg-red-500 bg-green-500 bg-blue-500 bg-yellow-500 bg-purple-500 
+bg-pink-500 bg-indigo-500 bg-orange-500 bg-teal-500 bg-cyan-500
+bg-blue-100 bg-white text-gray-900 text-white
+scale-110 scale-125 px-8 py-4 text-lg rounded-full
+shadow-2xl rotate-12 animate-pulse transform transition-transform duration-200
+*/
+
 /* Дополнительные кастомные стили можно добавлять здесь */
 .custom-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
