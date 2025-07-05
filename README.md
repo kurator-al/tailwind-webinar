@@ -26,7 +26,7 @@ tailwind-webinar/
 │   ├── index.html      # Главная страница
 │   ├── main.js         # JavaScript логика
 │   ├── css/            # CSS файлы, в том числе и главный style.css
-│   │   ├── style.css           # Tailwind + кастомные стили
+│   │   ├── style.css           # Подключение Tailwind + кастомные стили + переменные tailwind
 │   ├── js/             # Внешние JS библиотеки
 │   └── img/            # Изображения. Все картинки из этой папки будут оптимизированы
 ├── vite.config.js      # Конфигурация сборщика Vite
