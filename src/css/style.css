@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* вот как можно создать свои кастомные переменные. Дальше в html мы пишем элементу 
+класс с этим именем и он будет использоваться, например тексту пишем text-really-red, и текст будет
+использовать переменную --color-really-red. Более подробно тут https://tailwindcss.com/docs/theme */
+@theme {
+  --color-really-red: #FF0000;
+  --color-really-green: #00FF00;
+  --color-really-blue: #0000FF;
+}
+
 /* 
 Классы для динамического использования в JavaScript, просто добавляем в коммент и tailwind их скомпилирует:
 bg-red-500 bg-green-500 bg-blue-500 bg-yellow-500 bg-purple-500 
