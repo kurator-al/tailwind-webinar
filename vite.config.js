@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 const COMPRESSION_QUALITY = 90; // Можно поиграться с сжатием картинок, 100 - максимальное
-// качество, 0 - минимальное качество. Работает только при билде.
+// качество, 1 - минимальное качество. Работает только при билде (npm run build).
 
 export default defineConfig({
   root: "./src",

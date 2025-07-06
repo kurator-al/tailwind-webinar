@@ -30,6 +30,7 @@ changeColorBtn.addEventListener("click", () => {
   changeColorBtn.classList.add(getRandomColor());
 });
 
+// Инициализация и настройка слайдера Swiper
 const swiper = new Swiper(".mySwiper", {
   // Основные параметры
   direction: "horizontal",
